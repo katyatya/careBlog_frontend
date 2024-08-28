@@ -1,0 +1,27 @@
+.list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.item {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	margin: 7px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	height: 35px;
+	border: 1px solid #9990d9;
+	background-color: #fff;
+	border-radius: 30px;
+	transition: all 0.3s ease-out;
+}
+.item p {
+	white-space: nowrap;
+}
+.item:hover {
+	background-color: #c9c4f3;
+}

@@ -1,0 +1,55 @@
+.root {
+	background-color: #ffffff;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+
+.inner {
+	display: flex;
+	height: min(100px);
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo {
+	color: #8178c0;
+	font-family: 'IndieFlower';
+	display: flex;
+	font-size: 33px;
+	align-items: end;
+	font-weight: 700;
+	line-height: 35px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 50px;
+	text-decoration: none;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 50px;
+	button {
+		margin-left: 10px;
+		color: #000;
+		margin: 0 10px;
+		transition: transform 0.2s ease-in-out;
+		height: 50px;
+	}
+	.enter_but,
+	.logout_but {
+		background-color: #ffffff;
+		border: #9990d9 solid 1.5px;
+	}
+	.account_but,
+	.post_but {
+		background-color: #ddf0a5f9 !important;
+	}
+	button:hover {
+		transform: scale(1.05);
+	}
+	a {
+		text-decoration: none;
+	}
+}
