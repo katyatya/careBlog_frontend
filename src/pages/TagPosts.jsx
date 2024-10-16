@@ -34,8 +34,8 @@ export const TagPosts = () => {
 							user={obj.user}
 							imageUrl={
 								obj.image_url
-									? `http://localhost:44455${obj.image_url}`
-									: 'http://localhost:44455/uploads/no_image.png'
+									? `${process.env.REACT_APP_API_URL}${obj.image_url}`
+									: `${process.env.REACT_APP_API_URL}/uploads/no_image.png'`
 							}
 							createdAt={obj.created_at}
 							viewsCount={obj.views_count}

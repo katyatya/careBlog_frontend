@@ -66,8 +66,8 @@ export const FullPost = () => {
 						title={data.title}
 						imageUrl={
 							data.image_url
-								? `http://localhost:44455${data.image_url}`
-								: 'http://localhost:44455/uploads/no_image.png'
+								? `${process.env.REACT_APP_API_URL}${data.image_url}`
+								: `${process.env.REACT_APP_API_URL}/uploads/no_image.png`
 						}
 						user={data.user}
 						createdAt={data.created_at}
@@ -82,7 +82,7 @@ export const FullPost = () => {
 
 			<CommentsBlock items={data.comments} isLoading={false}>
 				<Index
-					param={`http://localhost:44455${avatarUrl}`}
+					param={`${process.env.REACT_APP_API_URL}${avatarUrl}`}
 					post_id={data.post_id}
 					user_id={myUserId}
 				/>

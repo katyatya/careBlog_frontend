@@ -80,7 +80,9 @@ export const Registration = () => {
 					<img
 						className={styles.avatar}
 						src={
-							imageUrl ? `http://localhost:44455${imageUrl}` : 'noavatar.png'
+							imageUrl
+								? `${process.env.REACT_APP_API_URL}${imageUrl}`
+								: 'noavatar.png'
 						}
 					/>
 				</Button>

@@ -7,7 +7,9 @@ export const UserInfo = ({ avatar_url, full_name, additionalText }) => {
 			<img
 				className={styles.avatar}
 				src={
-					avatar_url ? `http://localhost:44455${avatar_url}` : '/noavatar.png'
+					avatar_url
+						? `${process.env.REACT_APP_API_URL}${avatar_url}`
+						: '/noavatar.png'
 				}
 				alt={full_name}
 			/>

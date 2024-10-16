@@ -13,6 +13,7 @@
 		"@testing-library/user-event": "^13.5.0",
 		"axios": "^0.27.2",
 		"clsx": "^1.1.1",
+		"dotenv": "^16.4.5",
 		"easymde": "^2.16.1",
 		"html-react-parser": "^5.1.12",
 		"jwt-decode": "^4.0.0",
