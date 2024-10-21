@@ -64,7 +64,7 @@ export const Home = () => {
 								user={obj.user}
 								imageUrl={
 									obj.image_url
-										? `${process.env.PI_URL}${obj.image_url}`
+										? `${process.env.REACT_APP_API_URL}${obj.image_url}`
 										: `${process.env.REACT_APP_API_URL}/uploads/no_image.png`
 								}
 								createdAt={obj.created_at}

@@ -36,8 +36,6 @@ export const Post = ({
 			dispatch(fetchRemovePost(id))
 		}
 	}
-	console.log(tags)
-	console.log(tags[0] !== '')
 
 	return (
 		<div
