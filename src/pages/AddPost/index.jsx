@@ -9,7 +9,6 @@ import 'quill-emoji/dist/quill-emoji.css'
 
 import 'easymde/dist/easymde.min.css'
 import styles from './AddPost.module.scss'
-import { flushSync } from 'react-dom'
 import { useSelector } from 'react-redux'
 import { selectIsAuth } from '../../redux/slices/auth'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'

@@ -1,5 +1,4 @@
 import React from 'react'
-import Grid from '@mui/material/Grid'
 
 import { Post } from '../components/Post'
 import { Index } from '../components/AddComment'
@@ -16,9 +15,6 @@ export const FullPost = () => {
 	const [avatarUrl, setAvatarUrl] = React.useState('')
 	const [myUserId, setMyUserId] = React.useState('')
 	const [plainText, setPlainText] = React.useState('')
-	const post_container = {
-		padding: 100,
-	}
 
 	React.useEffect(() => {
 		axios

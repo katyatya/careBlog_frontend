@@ -37,7 +37,7 @@ export const Post = ({
 		}
 	}
 	console.log(tags)
-	console.log(tags[0] != '')
+	console.log(tags[0] !== '')
 
 	return (
 		<div
@@ -86,7 +86,7 @@ export const Post = ({
 					</h2>
 
 					<ul className={styles.tags}>
-						{tags[0] != ''
+						{tags[0] !== ''
 							? tags.map(name => (
 									<li key={name}>
 										<Link to={`/tags/${name}`}>#{name}</Link>
