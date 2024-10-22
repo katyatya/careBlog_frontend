@@ -13,6 +13,8 @@ export const Index = ({ param, post_id, user_id }) => {
 	const [text, setText] = React.useState('')
 	const navigate = useNavigate()
 
+	console.log(param)
+
 	const onSubmit = async () => {
 		const fields = {
 			comment_text: text,
