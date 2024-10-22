@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './AddComment.module.scss'
 import axios from '../../axios'
 import { Link, useNavigate } from 'react-router-dom'
+import { redirect } from 'react-router-dom'
 
 import TextField from '@mui/material/TextField'
 import Avatar from '@mui/material/Avatar'
@@ -20,7 +21,8 @@ export const Index = ({ param, post_id, user_id }) => {
 		}
 		try {
 			await axios.post(`/posts/${post_id}`, fields)
-			navigate(`/posts/${post_id}`)
+			navigate(`/`)
+			alert('Комментарий загружен :)')
 		} catch (err) {
 			alert('Ошибка загрузки комментария')
 		}
