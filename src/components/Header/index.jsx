@@ -31,7 +31,7 @@ export const Header = () => {
 		<div className={styles.root}>
 			<Container maxWidth='lg'>
 				<div className={styles.inner}>
-					<Link className={styles.logo} to='/'>
+					<Link className={styles.logo} to='/' id='flower'>
 						<Lottie options={defaultOptions} height={100} width={100} />
 						<p style={{ marginBottom: 0 }}>Care Blog</p>
 					</Link>
