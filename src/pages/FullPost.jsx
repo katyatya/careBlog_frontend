@@ -31,6 +31,7 @@ export const FullPost = () => {
 		if (token) {
 			try {
 				const decodedToken = jwtDecode(token)
+				console.log(decodedToken)
 				setAvatarUrl(decodedToken.avatar_url)
 				setMyUserId(decodedToken.user_id)
 			} catch (error) {
@@ -63,7 +64,7 @@ export const FullPost = () => {
 						imageUrl={
 							data.image_url
 								? `${process.env.REACT_APP_API_URL}${data.image_url}`
-								: `${process.env.REACT_APP_API_URL}/uploads/no_image.png`
+								: `${process.env.REACT_APP_API_URL}uploads/no_image.png`
 						}
 						user={data.user}
 						createdAt={data.created_at}

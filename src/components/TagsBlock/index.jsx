@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './TagsBlock.module.scss'
 import Skeleton from '@mui/material/Skeleton'
+import { Link } from 'react-router-dom'
 
 export const TagsBlock = ({ items, isLoading = true }) => {
 	return (
@@ -8,11 +9,11 @@ export const TagsBlock = ({ items, isLoading = true }) => {
 			{(isLoading ? [...Array(5)] : items).map(
 				(name, i) =>
 					name !== '' && (
-						<a className={styles.item} href={`/tags/${name}`}>
+						<Link to={`/tags/${name}`} className={styles.item}>
 							<li key={i} disablePadding>
 								{isLoading ? <Skeleton width={100} /> : <p>{name}</p>}
 							</li>
-						</a>
+						</Link>
 					)
 			)}
 		</ul>

@@ -53,3 +53,21 @@
 		text-decoration: none;
 	}
 }
+
+@media (max-width: 600px) {
+	.logo {
+		font-size: 17px;
+		line-height: 17px;
+		padding: 0 20px;
+	}
+	.buttons {
+		margin: 0 20px;
+		button {
+			color: #000;
+			height: 50px;
+		}
+	}
+	#flower {
+		visibility: hidden;
+	}
+}

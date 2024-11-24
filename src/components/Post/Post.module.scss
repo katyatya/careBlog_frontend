@@ -4,6 +4,7 @@ $blue: #d047ac;
 	background-color: #fff;
 	border: 1px solid #dedede;
 	border-radius: 6px;
+	height: 600px;
 	overflow: hidden;
 	margin-bottom: 15px;
 	position: relative;
@@ -18,6 +19,7 @@ $blue: #d047ac;
 	}
 
 	&Full {
+		height: auto;
 		&:hover {
 			background-color: #fff;
 			border: 1px solid #dedede;
@@ -55,7 +57,12 @@ $blue: #d047ac;
 }
 
 .title {
-	font-size: 28px;
+	font-size: 25px;
+	height: 150px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 	margin: 0;
 
 	a {
